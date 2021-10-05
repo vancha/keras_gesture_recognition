@@ -5,6 +5,7 @@ from tensorflow.keras import layers
 import os
 
 num_skipped = 0
+#to train on your own images, create a folder for each class in the dataset folder, and list them here
 for folder_name in ("horn", "peace"):
     folder_path = os.path.join("dataset", folder_name)
     for fname in os.listdir(folder_path):
